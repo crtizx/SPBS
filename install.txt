@@ -1,13 +1,9 @@
 #!/bin/bash
 clear
-echo "--------------------"
-echo "|     Кто ты ?     |"
 echo "|------------------|"
-echo "| 1. Termux        |"
-echo "| 2. Другой Unix   |"
-echo "|                  |"
-echo "| Введите 1 или 2: |"
-echo "--------------------"
+echo "|        1         |"
+echo "|------------------|"
+
 read numb
 if [ $numb = "1" ]
 then
@@ -17,8 +13,8 @@ then
 	pip3 install requests
 	pip3 install colorama
 	cp ~/spymer/spammer.py /data/data/com.termux/files/usr/bin/spymer
-	dos2unix /data/data/com.termux/files/usr/bin/spymer
-	chmod 777 /data/data/com.termux/files/usr/bin/spymer
+	dos2unix /data/data/com.termux/files/usr/bin/spammer
+	chmod 777 /data/data/com.termux/files/usr/bin/spammer
 	spymer
 else
 	if [ $numb = "2" ]
@@ -40,4 +36,3 @@ else
 		echo "Некорректный ввод"
 	fi
 fi
-
