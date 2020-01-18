@@ -12,7 +12,7 @@ then
 	pkg install python3-pip
 	pip3 install requests
 	pip3 install colorama
-	cp ~/spymer/spammer.py /data/data/com.termux/files/usr/bin/spymer
+	cp ~/spymer/spammer.py /data/data/com.termux/files/usr/bin/spammer
 	dos2unix /data/data/com.termux/files/usr/bin/spammer
 	chmod 777 /data/data/com.termux/files/usr/bin/spammer
 	spymer
